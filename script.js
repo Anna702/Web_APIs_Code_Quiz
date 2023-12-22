@@ -32,3 +32,31 @@
   // User is taken to the high scores page
   // High scores are listed, sorted highest to lowest
   // User has option to take the quiz again
+
+  //Create a code quiz that contains the following requirements:
+  const startBtn = document.getElementById("start");
+  const startScreen = document.getElementById('start-screen');
+  const questions = document.getElementById('questions');
+  const questionTitle = document.getElementById('question-title');
+  const answers = document.getElementById('choices');
+
+
+
+// Press the start button :
+//a timer starts and the first question appears.
+//addEventListener to a button and run a function to start a timer and show a first question.
+
+  startButton.addEventListener("click", function () {
+    console.log("button clicked");
+  });
+
+
+// - Questions contain buttons for each answer.
+// -
+// - When answer is clicked, the next question appears
+// -
+// - If the answer clicked was incorrect then subtract time from the clock
+
+// - The quiz should end when all questions are answered or the timer reaches 0.
+
+// - When the game ends, it should display their score and give the user the ability to save their initials and their score
