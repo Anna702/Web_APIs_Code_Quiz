@@ -20,7 +20,7 @@ let allQuestions = [
   {
     question: "How can you comment a single line of code in JavaScript?",
     answers: [
-      "<!--This is a comment-->",
+      "<!!!--This is a comment-->",
       "// This is a comment",
       "/* This is a comment */",
       "# This is a comment",
