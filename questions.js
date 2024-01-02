@@ -14,7 +14,7 @@ let allQuestions = [
   },
   {
     question: "Which keyword is used to declare a variable in JavaScript?",
-    answers: ["var", "let", "const", "both B and C"],
+    answers: ["dec", "let", "const", "both 2 and 3"],
     correctAnswer: 3,
   },
   {
