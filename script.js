@@ -10,7 +10,7 @@ startBtn.addEventListener("click", function () {
   //timer starts
   setTime();
   //welcome text - dissapears
-  
+  document.getElementById("start-screen").classList.add("hide");
   //first question appears
 });
 
