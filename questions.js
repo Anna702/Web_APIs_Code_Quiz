@@ -1,6 +1,5 @@
 //questions - an array of objects
-//Each object has a question, all answers (an array of answers), and a correctAnswer (it is a number - the position of the right answer in an answers array).
-//
+//Each object has a question, options of answers (an array of answers), and a correctAnswer (it is a number - the index of the right answer in an answers array).
 
 let questions = [
   {
