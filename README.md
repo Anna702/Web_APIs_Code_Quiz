@@ -1,83 +1,17 @@
 # Web_APIs_Code_Quiz
 
-A timed coding quiz with multiple-choice questions. This app runs in the browser, and features dynamically updated HTML and CSS powered by JavaScript code.
+A timed coding quiz with multiple-choice questions. This app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code.
 
-## User Story
+## Description
 
-```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+This Code Quiz contains the following features:
 
-## Acceptance Criteria
-Create a code quiz that contains the following requirements:
+- A start button triggers a timer upon clicking, revealing the first question and four answer options.
+- When answer is clicked, the next question appears.
+- If an incorrect answer is selected, time is deducted from the clock, accompanied by a sound.
+- The quiz concludes when all questions are answered or the timer reaches 0.
+- Upon completion, the game displays the score and allows users to save their initials and score.
 
-- A start button that when clicked a timer starts and the first question appears.
+## Project status
 
-  - Questions contain buttons for each answer.
-  -
-  - When answer is clicked, the next question appears
-  -
-  - If the answer clicked was incorrect then subtract time from the clock
-
-- The quiz should end when all questions are answered or the timer reaches 0.
-
-  - When the game ends, it should display their score and give the user the ability to save their initials and their score
-
-
-## Mock-Up
-
-The following animation demonstrates the application functionality:
-
-![Animation of code quiz. Presses button to start quiz. Clicks the button for the answer to each question, displays if answer was correct or incorrect. Quiz finishes and displays high scores. User adds their initials, then clears their initials and starts over.](./assets/08-web-apis-challenge-demo.gif)
-
-## Grading Requirements
-
-This challenge is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 40%
-
-- Satisfies all of the above acceptance criteria.
-
-### Deployment: 32%
-
-- Application deployed at live URL.
-
-- Application loads with no errors.
-
-- Application GitHub URL submitted.
-
-- GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-- Application user experience is intuitive and easy to navigate.
-
-- Application user interface style is clean and polished.
-
-- Application resembles the mock-up functionality provided in the challenge instructions.
-
-### Repository Quality: 13%
-
-- Repository has a unique name.
-
-- Repository follows best practices for file structure and naming conventions.
-
-- Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-- Repository contains multiple descriptive commit messages.
-
-- Repository contains quality README file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-- The URL of the functional, deployed application.
-
-- The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
----
-
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+Deployed: https://anna702.github.io/Web_APIs_Code_Quiz/
