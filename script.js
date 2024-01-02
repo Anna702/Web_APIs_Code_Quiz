@@ -3,10 +3,9 @@
 const startBtn = document.getElementById("start");
 const timeCount = document.getElementById("time");
 const answersArray = document.getElementById("answersArray");
-const result = document.getElementById("result");
 const submit = document.getElementById("submit");
 const highscores = JSON.parse(localStorage.getItem("highscores")) || [];
-
+const feedback = document.getElementById("feedback");
 
 let timeLeft = 75;
 let questionIndex = 0;
@@ -18,9 +17,9 @@ for (let i = 0; i < 4; i++) {
     if (event.target.dataset.rightAnswer === "false") {
       timeLeft = timeLeft - 10;
       timeCount.textContent = timeLeft;
-      result.textContent = "wrong";
+      showFeedback("Wrong!");
     } else {
-      result.textContent = "correct";
+      showFeedback("Correct!");
     }
     if (questionIndex < allQuestions.length) {
       showQuestion();
@@ -28,6 +27,11 @@ for (let i = 0; i < 4; i++) {
       showFinal();
     }
   });
+}
+
+function showFeedback(message) {
+  feedback.classList.remove("hide");
+  feedback.textContent = message;
 }
 
 startBtn.addEventListener("click", function () {
@@ -48,7 +52,8 @@ function setTime() {
     timeCount.textContent = timeLeft;
     if (timeLeft <= 0) {
       clearInterval(timerInterval);
-      //TODO: when time is over - tell it to user (function)
+      document.getElementById("questions").classList.add("hide");
+      showFeedback("Time's up!");
     }
   }, 1000);
 }
