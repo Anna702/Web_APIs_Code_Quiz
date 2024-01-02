@@ -45,7 +45,7 @@ let allQuestions = [
   },
   {
     question: "What does the === operator check in JavaScript?",
-    options: [
+    answers: [
       "Value and type equality",
       "Value equality",
       "Type equality",
