@@ -10,6 +10,7 @@ const feedback = document.getElementById("feedback");
 let timeLeft = 75;
 let questionIndex = 0;
 let finalScore = 0;
+let timerInterval = null;
 
 //check if the answert is true or false
 for (let i = 0; i < 4; i++) {
@@ -47,7 +48,7 @@ startBtn.addEventListener("click", function () {
 });
 
 function setTime() {
-  const timerInterval = setInterval(function () {
+  timerInterval = setInterval(function () {
     timeLeft--;
     timeCount.textContent = timeLeft;
     if (timeLeft <= 0) {
@@ -76,6 +77,7 @@ function showQuestion() {
 
 function showFinal() {
   document.getElementById("questions").classList.add("hide");
+  clearInterval(timerInterval);
   document.getElementById("end-screen").classList.remove("hide");
   timeCount.parentElement.classList.add("hide");
   finalScore = timeLeft;
