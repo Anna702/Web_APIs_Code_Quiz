@@ -77,7 +77,7 @@ function showFinal() {
   submit.addEventListener("click", function () {
     highscores.push({
       score: finalScore,
-      name: document.getElementById("initials").textContent,
+      name: document.getElementById("initials").value,
     });
     localStorage.setItem("highscores", JSON.stringify(highscores));
     window.location.href = "highscores.html";
