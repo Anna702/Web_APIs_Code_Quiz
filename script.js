@@ -33,6 +33,11 @@ for (let i = 0; i < 4; i++) {
 function showFeedback(message) {
   feedback.classList.remove("hide");
   feedback.textContent = message;
+  if (message === "Correct!") {
+    document.getElementById("correctAudio").play();
+  } else if (message === "Wrong!") {
+    document.getElementById("incorrectAudio").play();
+  }
 }
 
 startBtn.addEventListener("click", function () {
