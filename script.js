@@ -53,6 +53,7 @@ function setTime() {
     if (timeLeft <= 0) {
       clearInterval(timerInterval);
       document.getElementById("questions").classList.add("hide");
+      timeCount.parentElement.classList.add("hide");
       showFeedback("Time's up!");
     }
   }, 1000);
