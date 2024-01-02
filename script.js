@@ -8,14 +8,19 @@ startBtn.addEventListener("click", function () {
   //btn hide
   startBtn.style.display = "none";
   //timer starts
+  setTime();
+  //welcome text - dissapears
+  
+  //first question appears
+});
+
+function setTime() {
   const timerInterval = setInterval(function () {
     timeLeft--;
     timeCount.textContent = timeLeft;
     if (timeLeft <= 0) {
-      // Stops execution of action at set interval
       clearInterval(timerInterval);
+      //TODO: when time is over - tell it to user (function)
     }
   }, 1000);
-
-  //first q appears
-});
+}
