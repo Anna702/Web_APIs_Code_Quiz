@@ -6,7 +6,7 @@ const answersArray = document.getElementById("answersArray");
 const result = document.getElementById("result");
 const submit = document.getElementById("submit");
 const highscores = JSON.parse(localStorage.getItem("highscores")) || [];
-console.log(highscores);
+
 
 let timeLeft = 75;
 let questionIndex = 0;
