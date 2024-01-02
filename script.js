@@ -61,6 +61,7 @@ function setTime() {
       document.getElementById("questions").classList.add("hide");
       timeCount.parentElement.classList.add("hide");
       showFeedback("Time's up!");
+      document.getElementById("incorrectAudio").play();
     }
   }, 1000);
 }
