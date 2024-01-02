@@ -6,6 +6,16 @@ const answersArray = document.getElementById("answersArray");
 let timeLeft = 75;
 questionIndex = 0;
 
+//check if the answert is true or false
+for (let i = 0; i < 4; i++) {
+  answersArray.children[i].addEventListener("click", function (event) {
+    if (event.target.dataset.rightAnswer === "false") {
+      timeLeft = timeLeft - 10;
+      timeCount.textContent = timeLeft;
+    }
+  });
+}
+
 startBtn.addEventListener("click", function () {
   //btn hide
   startBtn.style.display = "none";
@@ -35,6 +45,11 @@ function showQuestion() {
   for (let i = 0; i < 4; i++) {
     answersArray.children[i].textContent =
       allQuestions[questionIndex].answers[i];
+    if (i === allQuestions[questionIndex].correctAnswer) {
+      answersArray.children[i].dataset.rightAnswer = true;
+    } else {
+      answersArray.children[i].dataset.rightAnswer = false;
+    }
   }
   questionIndex++;
 }
