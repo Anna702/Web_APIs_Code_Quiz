@@ -12,7 +12,9 @@ for (let i = 0; i < 4; i++) {
     if (event.target.dataset.rightAnswer === "false") {
       timeLeft = timeLeft - 10;
       timeCount.textContent = timeLeft;
+    } else {
     }
+    showQuestion();
   });
 }
 
