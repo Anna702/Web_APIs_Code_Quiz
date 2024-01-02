@@ -13,6 +13,11 @@ a:hover {
   color: #8570a5;
 }
 
+li:hover,
+li:nth-child(odd):hover {
+  background-color: #a797c1;
+}
+
 button {
   display: inline-block;
   margin: 5px;
