@@ -18,7 +18,11 @@ for (let i = 0; i < 4; i++) {
     } else {
       result.textContent = "correct";
     }
-    showQuestion();
+    if (questionIndex < allQuestions.length) {
+      showQuestion();
+    } else {
+      showFinal();
+    }
   });
 }
 
@@ -60,5 +64,9 @@ function showQuestion() {
   questionIndex++;
 }
 
+function showFinal() {
+  document.getElementById("questions").classList.add("hide");
+  document.getElementById("end-screen").classList.remove("hide");
+}
 //show if he right - text and next q
 //if he wrong - next q, text and minus 10 secs from timer
