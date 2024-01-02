@@ -3,6 +3,8 @@
 const startBtn = document.getElementById("start");
 const timeCount = document.getElementById("time");
 const answersArray = document.getElementById("answersArray");
+const result = document.getElementById("result");
+
 let timeLeft = 75;
 questionIndex = 0;
 
@@ -12,7 +14,9 @@ for (let i = 0; i < 4; i++) {
     if (event.target.dataset.rightAnswer === "false") {
       timeLeft = timeLeft - 10;
       timeCount.textContent = timeLeft;
+      result.textContent = "wrong";
     } else {
+      result.textContent = "correct";
     }
     showQuestion();
   });
@@ -56,9 +60,5 @@ function showQuestion() {
   questionIndex++;
 }
 
-//index q appears
-//all answers are buttons
-//user press button
-//compare answers
 //show if he right - text and next q
 //if he wrong - next q, text and minus 10 secs from timer
