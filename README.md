@@ -7,7 +7,7 @@ A timed coding quiz with multiple-choice questions. This app runs in the browser
 ```
 AS A coding boot camp student
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
+SO THAT I can gauge my prostartBtn.style.display = "none";gress compared to my peers
 ```
 
 ## Acceptance Criteria
