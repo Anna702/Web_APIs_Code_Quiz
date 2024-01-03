@@ -15,3 +15,19 @@ This Code Quiz contains the following features:
 ## Project status
 
 Deployed: https://anna702.github.io/Web_APIs_Code_Quiz/
+
+## Project Screenshot
+
+![Anna-Chernova-Code-Quiz-Screenshot](./Screenshot-code-quiz.png)
+
+## Project GIF
+
+![Code-Quiz-Gif](./sfx/code-quiz.gif)
+
+## License
+
+MIT License
+
+## Q&A
+
+In case you have any questions, feel free to contact me at <a href="mailto:annanvks@gmail.com?">annanvks@gmail.com</a>.
